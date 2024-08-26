@@ -37,6 +37,9 @@
             colors: {
               clifford: "#da373d",
               "Book-primary": "#ABEF5F",
+              "small-round": "#FFFFFF",
+              "color-light-green": "#ABEF5F",
+              
             },
           },
         },
@@ -50,48 +53,51 @@
       <nav class="navbar bg-base-100">
         <div class="flex justify-between items-center w-full">
           <!-- Left Section: Logo -->
-          <div class="flex-none w-64">
+          <div class="flex-none">
             <a class="font-bold text-xl">Rinterio</a>
           </div>
 
           <!-- Center Section: Navigation Links for Large Screens -->
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="font-bold text-xl">Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
+          <div class="hidden lg:flex space-x-6">
+            <!-- Use space-x-6 for consistent gap -->
+            <a class="font-bold text-xl">Home</a>
+            <a>Services</a>
+            <a>Portfolio</a>
+            <a>Blogs</a>
+            <a>Contact Us</a>
           </div>
 
           <!-- Right Section: Search, Cart, and Book Consult Button -->
-          <div class="navbar-end flex items-center space-x-4">
+          <div class="flex items-center space-x-4">
+            <!-- Use consistent spacing with space-x-4 -->
+
             <!-- Search Icon -->
-            <button class="btn btn-ghost">
+            <button
+              class="btn btn-ghost btn-circle rounded-full bg-small-round border border-white-100"
+            >
               <svg
-                 xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
                 class="h-8 w-8"
                 fill="none"
-                viewBox="0 0 20 20"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="1"
-                  d="M10 20l6-6m2-6a6 6 0 11-12 0 6 6 0 0112 0z"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
             </button>
 
-            <!-- Shopping Cart Icon -->
-            <button class="btn btn-ghost">
+            <!-- Cart Icon -->
+            <button class="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-7"
+                class="h-8 w-8"
                 fill="none"
-                viewBox="0 0 20 20"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
@@ -114,6 +120,34 @@
           </div>
         </div>
       </nav>
+      <!-- hero section -->
+      <div class="hero min-h-screen">
+        <div class="hero-content text-center flex-col lg:flex-col">
+          <img class="w-150 h-100  " src="assets/banner.png" />
+          <div>
+            <h1 class="text-5xl  font-bold">
+              A barn house of this design has a <br />
+              striking appearance
+            </h1>
+            <p class="py-6 ">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              <br />
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <button
+              class="btn  min-w-full lg:min-w-24 rounded-full font-bold text-xl bg-lime-200"
+            >
+              View Details
+              <i
+                class="fa-solid fa-arrow-up-long fa-rotate-by w-8 h-8 bg-lime-400 rounded-full text-white inline-flex justify-center items-center"
+                style="--fa-rotate-angle: 420deg"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Main Section -->
     <main></main>
