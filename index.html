@@ -1,37 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House Design</title>
     <!-- google font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/ca6929ffbd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- DaisyUi CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
       .font-Manrope {
-          font-family: "Manrope", sans-serif;
+        font-family: "Manrope", sans-serif;
       }
     </style>
 
     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="font-Manrope">
-<h3>this is test</h3>
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "Book-primary": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Manrope">
+    <!-- Header section -->
+    <header class="md:container mx-auto">
+      <!-- nav section -->
+      <nav class="navbar bg-base-100">
+        <div class="flex justify-between items-center w-full">
+          <!-- Left Section: Logo -->
+          <div class="flex-none w-64">
+            <a class="font-bold text-xl">Rinterio</a>
+          </div>
+
+          <!-- Center Section: Navigation Links for Large Screens -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="font-bold text-xl">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Section: Search, Cart, and Book Consult Button -->
+          <div class="navbar-end flex items-center space-x-4">
+            <!-- Search Icon -->
+            <button class="btn btn-ghost">
+              <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 20 20"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M10 20l6-6m2-6a6 6 0 11-12 0 6 6 0 0112 0z"
+                />
+              </svg>
+            </button>
+
+            <!-- Shopping Cart Icon -->
+            <button class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-7"
+                fill="none"
+                viewBox="0 0 20 20"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </button>
+
+            <!-- Book Consult Button -->
+            <a class="btn text-xl text-black bg-Book-primary lg:rounded-full">
+              Book Consult
+              <i
+                class="fa-solid fa-arrow-up-long fa-rotate-by w-8 h-8 bg-black rounded-full text-white inline-flex justify-center items-center"
+                style="--fa-rotate-angle: 420deg"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main></main>
+    <!-- Footer section -->
+    <footer></footer>
+  </body>
 </html>
