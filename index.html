@@ -68,7 +68,7 @@
 
           <!-- Right Section: Search, Cart, and Book Consult Button -->
           <div class="flex items-center space-x-4">
-            <!-- Use consistent spacing with space-x-4 -->
+          
 
             <!-- Search Icon -->
             <button
@@ -324,14 +324,48 @@
             
         </section>
       </section>
+        <!-- Our Latest Portfolio -->
+         <section>
+            <!-- Top Button -->
+        <div class="text-center mb-2">
+          <button class="btn rounded-full bg-lime-100 border flex items-center mt-16 mx-auto mb-5">
+            <i class="fa fa-arrow-right-long text-black"></i>
+            <span class="text-black">Let’s Connect</span>
+          </button>
+        </div>
+
+        <!-- Text content -->
+        <div class="text-center mb-8">
+          <h3 class="text-6xl font-bold mb-5">Our Works Process</h3>
+          <p class="mb-5">
+            The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+            featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+            <!-- card section -->
+             <div class="card card-side bg-base-100 shadow-xl">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+      alt="Movie" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">New movie is released!</h2>
+    <p>Click the button to watch on Jetflix app.</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Watch</button>
+    </div>
+  </div>
+</div>
+         </section>
 <!-- Let’s Discuss Next Project section -->
-<section>
-  <div class=" hero bg-base-200 min-h-screen bg-[url('/assets/bg.jpg')] bg-cover bg-center h-screen">
-    <div class=" hero-content flex-col lg:flex-row-reverse items-center">
-      <div class="mx-auto">
+<section >
+  <div class=" hero bg-base-200 min-h-screen bg-[url('/assets/bg.jpg')] bg-cover bg-center">
+    <div class=" hero-content flex-col">
+     
         <!-- Top Button -->
         <div class="text-center mb-2">
-          <button class="btn rounded-full bg-lime-100 border flex items-center mx-auto mb-5">
+          <button class="btn rounded-full bg-lime-100 border flex items-center mb-5">
             <i class="fa fa-arrow-right-long text-black"></i>
             <span class="text-black">Let’s Connect</span>
           </button>
@@ -347,41 +381,84 @@
         </div>
 
    <!-- Form -->
-<div class="">
-  <form class="grid grid-cols-2 gap-4 w-full">
-    <div class="form-control col-span-1">
-      <input type="text" placeholder="First Name*" class="input input-bordered rounded-full h-16" required />
+<div class="w-full">
+  <form class="grid grid-cols-1 lg:grid-cols-2  gap-4">
+    <div class="form-control">
+      <input type="text" placeholder="First Name*" class="input input-bordered  rounded-full h-16" required />
     </div>
-    <div class="form-control col-span-1">
+    <div class="form-control">
       <input type="text" placeholder="Last Name*" class="input input-bordered rounded-full h-16" required />
     </div>
-    <div class="form-control col-span-1">
+    <div class="form-control">
       <input type="number" placeholder="Phone Number*" class="input input-bordered rounded-full h-16" required />
     </div>
-    <div class="form-control col-span-1">
-      <input type="email" placeholder="Email*" class="input input-bordered rounded-full h-16" required />
+    <div class="form-control ">
+      <input type="email" placeholder="Email*" class="input input-bordered rounded-full h-16 " required />
     </div>
-    <div class="form-control col-span-2">
-      <input type="text" placeholder="Write your message here" class="input input-bordered rounded-xl h-64 text-center" required />
-    </div>
+     <div class="form-control col-span-1  lg:col-span-2">
+        <input type="text" placeholder="Write your message here" class="input input-bordered rounded-xl h-64 w-full text-center" required />
+      </div>
     <!-- Button -->
-    <div class="form-control col-span-2 mt-6">
-      <button class="btn bg-lime-400 w-full text-xl font-bold rounded-full">Send Mail <i
-                class="fa-solid fa-arrow-up-long fa-rotate-by w-8 h-8 bg-black rounded-full text-white inline-flex justify-center items-center"
-                style="--fa-rotate-angle: 420deg"
-              ></i></button>
+      <div class="form-control col-span-1 lg:col-span-2 mt-6">
+        <button class="btn bg-lime-400 w-full text-xl font-bold rounded-full flex items-center justify-center">
+          Send Mail
+          <i class="fa-solid fa-arrow-up-long fa-rotate-by w-8 h-8 bg-black rounded-full text-white inline-flex justify-center items-center ml-2" style="--fa-rotate-angle: 420deg"></i>
+        </button>
     </div>
   </form>
 </div>
 
-        </div>
       </div>
     </div>
   </div>
 </section>
 
     </main>
-    <!-- Footer section -->
-    <footer></footer>
+  <!-- Footer Section -->
+<footer class="bg-black px-4 py-8 p-8">
+  <!-- Header -->
+  <div class="text-center mb-6">
+    <h1 class="text-3xl text-white font-bold flex items-center justify-center">
+      <i class="fa-solid fa-arrow-up-long fa-rotate-by w-8 h-8 bg-lime-500 rounded-full text-black inline-flex justify-center items-center mr-2" style="--fa-rotate-angle: 420deg"></i> 
+      Rinterio
+    </h1>
+  </div>
+
+  <!-- Paragraph Content -->
+  <div class="text-center mb-6">
+    <p class="text-lg text-gray-500">
+      The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
+    </p>
+  </div>
+
+  <!-- Center Section: Navigation Links for Small Screens -->
+  <div class="lg:hidden flex flex-col items-center mb-6 space-y-4">
+    <a class="text-white text-lg">Home</a>
+    <a class="text-white text-lg">Services</a>
+    <a class="text-white text-lg">Portfolio</a>
+    <a class="text-white text-lg">Blogs</a>
+    <a class="text-white text-lg">Contact Us</a>
+  </div>
+
+  <!-- Center Section: Navigation Links for Large Screens -->
+  <div class="hidden lg:flex justify-center mx-auto px-24 mb-6 space-x-6">
+    <a class="text-white">Home</a>
+    <a class="text-white">Services</a>
+    <a class="text-white">Portfolio</a>
+    <a class="text-white">Blogs</a>
+    <a class="text-white">Contact Us</a>
+  </div>
+
+<!-- Book Consult Button -->
+  <div class="text-center mt-6">
+    <a class="btn  lg:text-xl text-black bg-Book-primary rounded-full">
+      Book Consult
+      <i class="fa-solid fa-arrow-up-long fa-rotate-by w-8 h-8 bg-black rounded-full text-white inline-flex justify-center items-center ml-2" style="--fa-rotate-angle: 420deg"></i>
+    </a>
+  </div>
+</footer>
+
+
+    </footer>
   </body>
 </html>
